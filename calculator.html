@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advanced Calculator</title>
+
+    <style>
+
+        body{
+            background:#1e1e1e;
+            color:white;
+            font-family:Arial;
+            text-align:center;
+            padding-top:80px;
+        }
+
+        h1{
+            color:lime;
+            font-size:55px;
+        }
+
+        input{
+            width:250px;
+            padding:15px;
+            margin:10px;
+            font-size:22px;
+            border-radius:10px;
+            border:none;
+        }
+
+        button{
+            padding:15px 25px;
+            margin:10px;
+            font-size:20px;
+            border:none;
+            border-radius:10px;
+            background:lime;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:orange;
+        }
+
+        h2{
+            color:orange;
+            font-size:40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Advanced Calculator 🧮</h1>
+
+    <input type="number" id="num1" placeholder="First Number">
+
+    <br>
+
+    <input type="number" id="num2" placeholder="Second Number">
+
+    <br>
+
+    <button onclick="add()">+</button>
+
+    <button onclick="minus()">-</button>
+
+    <button onclick="multiply()">×</button>
+
+    <button onclick="divide()">÷</button>
+
+    <h2 id="result">Answer = 0</h2>
+
+    <script>
+
+        function add(){
+
+            let a = Number(document.getElementById("num1").value);
+
+            let b = Number(document.getElementById("num2").value);
+
+            let answer = a + b;
+
+            document.getElementById("result").innerHTML =
+            "Answer = " + answer;
+        }
+
+        function minus(){
+
+            let a = Number(document.getElementById("num1").value);
+
+            let b = Number(document.getElementById("num2").value);
+
+            let answer = a - b;
+
+            document.getElementById("result").innerHTML =
+            "Answer = " + answer;
+        }
+
+        function multiply(){
+
+            let a = Number(document.getElementById("num1").value);
+
+            let b = Number(document.getElementById("num2").value);
+
+            let answer = a * b;
+
+            document.getElementById("result").innerHTML =
+            "Answer = " + answer;
+        }
+
+        function divide(){
+
+            let a = Number(document.getElementById("num1").value);
+
+            let b = Number(document.getElementById("num2").value);
+
+            let answer = a / b;
+
+            document.getElementById("result").innerHTML =
+            "Answer = " + answer;
+        }
+
+    </script>
+
+</body>
+
+</html>
